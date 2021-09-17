@@ -1,0 +1,96 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html>
+<h1 id="title" >Survey Form</h1>
+<style>
+	
+	.bk-pic{
+		background-attachment: fixed;
+		background-image: url(https://images-cdn.welcomesoftware.com/Zz0wZGI4ZTI2NjhlNGQxMWViODVlN2QzNTI0ZjhkZTQyOA==) ;
+	}
+	#title{
+		text-align: center;
+		font-size: 45px;
+		font-family: verdana;
+	}
+	#description{
+		text-align: center;
+	}
+	#survey-form{
+		font-family: verdana;
+		font-size: 25px;
+		color: white;
+		font-style: ;
+	}
+	#dropdown{
+		width: 625px;
+		font-size: 25px;
+		border-radius: 5px;
+		color: #df678c;
+	}
+	 [type='checkbox']{
+    width: 25px;
+    height: 25px;
+  }
+  form{
+  	color: #3d155f !important;
+
+
+  }
+  @media (hover: hover){
+		button:hover {
+			background: yellow;
+
+		}
+	}
+  
+
+
+</style>
+<body class="bk-pic">
+
+	<p id="description" style="color: white; font-size: 20px;">Please fill this form and help us in improving our website</p>
+	<form id="survey-form" style="padding: 20px 0px 0px 500px;" class="hull">
+		<label id="name-label">Enter Your Name:</label><br>
+		<input type="text" required name="Name" size="100" placeholder="Enter your name" id="name" style="margin-bottom: 30px !important; padding-bottom: 20px !important; border-radius: 5px;"><br>
+			<label id="email-label">Enter Your Email:</label><br>
+				<input type="email" size="100" required name="email" id="email" placeholder="Enter your email" style="margin-bottom: 30px; padding-bottom: 20px; border-radius: 5px"><br>
+		<label id="number-label">Enter your age:</label><br>
+		<input type="number" name="age" size="100" id="number" placeholder="Enter your age" min="18" max="50" style="margin-bottom: 30px; padding-bottom: 20px; border-radius: 5px;"><br>
+	<div style="margin-bottom: 30px; padding-bottom: 20px;">	
+		<label>Which option best describes your current role?</label><br>
+			<select id="dropdown" name="Work-status" required  >
+			<option  value="" disabled selected hidden>Select the best suited</option>
+			<option value="1">Student</option>
+			<option value="2">Full-Time worker</option>
+			<option value="3">Part-Time worker</option>
+			<option value="4">Intern</option>
+			<option value="5">Others</option>
+		</select>
+
+		</div>
+		<div style="margin-bottom: 30px; padding-bottom: 20px; border-radius: 5px">
+			<label>Would you suggest our app to a friend?</label><br>
+		<label><input type="radio" value="Definitely" name="status">Definitely</label><br>
+		<label><input type="radio" value="maybe" name="status">Maybe</label><br>
+		<label><input type="radio" value="notsure" name="status">Not sure</label>
+</div>
+<div style="margin-bottom: 30px; padding-bottom: 20px; border-radius: 5px">
+	<label>In which areas would you like us to improve?</label><br>
+		<label><input type="checkbox" value="FP">Fornt-End Projects</label><br>
+		<label><input type="checkbox" value="BP">Back-End Projects</label><br>
+		<label><input type="checkbox" value="forums">Forums</label><br>
+		<label><input type="checkbox" value="AC">Additional Courses</label><br>
+		<label><input type="checkbox" value="videos">Videos</label><br>
+		<label><input type="checkbox" value="challenges">Challenges</label><br>
+		<label><input type="checkbox" value="DV">Data Visualization</label>
+</div>
+<div style="margin-bottom: 30px; padding-bottom: 20px; border-radius: 5px">
+	<label>Any comments or suggestions?</label><br>
+	<textarea rows="7" cols="52" placeholder="Enter your comments..." style="font-size: 20px ;border-radius: 10px; border-style: solid; border-width: 6px; border-color: #710193;"></textarea>
+</div>
+		<button type="submit" id="submit" style="width: 650px; height: 50px; background-color: limegreen; border-radius: 5px; border-color: limegreen; font-size: 20px; font-family: cursive; color: whitesmoke; ">SUBMIT</button>
+	</form>
+
+</body>
+</html>
